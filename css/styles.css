@@ -1,0 +1,305 @@
+.navbar img{
+  height: 60px;
+}
+
+div.video{
+  position:relative;
+}
+video#bg{
+  opacity: 0.7;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+div.image{
+  position:absolute;
+  text-align: center;
+  z-index:10;
+  top:300px;
+  width: 100%;
+}
+
+div.image img{
+  width: 30%;
+}
+
+#bg:hover {
+  background: #ddd;
+  color: black;
+}
+
+h1 {
+    font-family: 'BenchNine', sans-serif;
+    font-family: 'IM Fell English SC', serif;
+    font-weight: 600;
+    font-size: 100px;
+    color: #ffc900;
+    text-align: center;
+    letter-spacing: 1.85px;
+    line-height: 1;
+    margin-bottom: 40px;
+    position: relative;
+    text-shadow: 3px 3px #000;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'BenchNine', sans-serif;
+    font-family: 'IM Fell English SC', serif;
+    font-weight: 600;
+    font-size: 100px;
+    color: #ffc900;
+    text-align: center;
+    letter-spacing: 1.85px;
+    line-height: 1;
+    margin-bottom: 40px;
+    position: relative;
+    text-shadow: 3px 3px #000;
+    text-transform: uppercase;
+    z-index: 1;
+    margin-top: 0;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.intro {
+    position: relative;
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 1290px;
+    width: 100%;
+}
+
+.text{
+    position: relative;
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 1024px;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff0, 0 0 20px #ffffff96;
+}
+
+.mode{
+    font-family: 'Noto Serif', serif;
+    font-size: 22px;
+    line-height: 38px;
+    width: 720px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 100px;
+    color: white;
+    background: rgba(0,0,0,.65);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image:url('../img/back.png');
+    background-repeat: repeat;
+}
+
+ul.bouts {
+  z-index:9999;
+  font-family: 'Noto Serif', serif;
+  width: 100%;
+  position: fixed;
+  list-style-type: none;
+  top: -20px;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+li {
+  display: inline-block;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px ;
+  text-decoration: none;
+}
+
+.txt {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 25px;
+    padding: 50px 200px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.desc{
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  background: crimson;
+}
+
+.btn {
+    height: 100px;
+    width: 50px;
+    background: crimson;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.icone {
+    width: 50px;
+}
+
+#introduction{
+  padding-top: 135px;
+}
+#description{
+  padding-top:135px;
+}
+#personnages{
+  padding-top:135px;
+}
+#contact{
+  padding-top:135px;
+}
+
+.c-dialog {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: 2.4rem;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background-color: rgba(black, .75);
+  transition: .2s;
+}
+
+
+.c-dialog__box {
+  flex: 1;
+  max-width: 48rem;
+  margin: auto;
+  padding: 2.4rem;
+  background-color: white;
+  opacity: 0.9;
+}
+
+
+.c-dialog[aria-hidden="true"] {
+  visibility: hidden;
+  opacity: 0;
+}
+footer{
+  display: flex;
+}
+div.js-page{
+  padding-top: 5px;
+  margin: 20px;
+}
+ul.youtube{
+  padding: 0px;
+}
+.youtube li a{
+  padding: 0px;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -42px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: -41px;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.boutonsvisu{
+  text-align: center;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
